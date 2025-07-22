@@ -57,7 +57,7 @@ If I had more time, I’d:
 
 ## About Me
 
-I'm Michael Great. I’m currently building up my skills in cloud data engineering and looking for an entry-level opportunity where I can grow on real-world projects like this one.
+I'm Michael Great. I’m skilled in cloud data engineering and looking for an associate opportunity where I can grow on real-world projects like this one.
 
-GitHub: [https://github.com/your-username](https://github.com/your-username)  
-LinkedIn: [https://linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+GitHub: https://github.com/great-engineer  
+LinkedIn: https://www.linkedin.com/in/michael-great-b80246307/
