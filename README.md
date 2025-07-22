@@ -1,56 +1,63 @@
-# Cloud ETL Pipeline – Weather Data to AWS S3
+# ETL Pipeline: Weather Data to AWS S3
 
-This project demonstrates how to build a simple, cloud-ready ETL (Extract, Transform, Load) pipeline using Python and AWS services.
+I built this project while learning how to work with APIs, clean up data using Python, and move it into AWS cloud storage. It's a basic but functional end-to-end ETL (Extract, Transform, Load) pipeline that uses public weather data and sends it to an S3 bucket.
 
-## Project Overview
+The idea was to simulate the kind of small automation a data engineer might build to feed dashboards or prep data for analysis.
 
-The pipeline extracts real-time weather data from a public API, transforms the raw JSON response using Python (Pandas), and loads the cleaned dataset into an AWS S3 bucket for cloud storage. This structure mimics real-world data workflows used by data engineering teams to automate ingestion and storage.
+---
 
-## Key Concepts Demonstrated
+## What It Does
 
-- Extracting structured data from a RESTful API
-- Transforming raw JSON into tabular format using Pandas
-- Saving cleaned data in CSV format
-- Uploading files to Amazon S3 using the Boto3 SDK
-- Managing access and credentials securely with AWS IAM and CLI
+- Pulls weather data for Washington, DC using a free public API
+- Converts that data from JSON into a clean table using pandas
+- Saves the result to a local CSV file
+- Uploads the CSV to an AWS S3 bucket using Boto3
 
-## Tools and Technologies
+Everything is done in Python and kept lightweight.
 
-- Python 3.14
-- Pandas
-- Requests
-- AWS S3 (Simple Storage Service)
-- Boto3 (AWS SDK for Python)
-- VS Code
+---
 
-## Files Included
+## Tech Used
 
-| File               | Description                                                |
-|--------------------|------------------------------------------------------------|
-| `main.py`          | Extracts and transforms hourly weather data from the API   |
-| `upload_to_s3.py`  | Uploads the final CSV file to an AWS S3 bucket             |
-| `weather_dc.csv`   | Example output file showing hourly temperature in DC       |
+- Python 3.14  
+- pandas  
+- requests  
+- boto3  
+- AWS S3 (Simple Storage Service)  
+- VS Code  
 
-## Use Case
+---
 
-This project simulates a foundational use case for cloud-based ETL pipelines. Similar patterns are used for:
+## File Breakdown
 
-- Ingesting and storing third-party API data
-- Automating data collection in analytics platforms
-- Feeding data warehouses like Amazon Redshift or BigQuery
-- Supporting real-time reporting workflows
+| File | Purpose |
+|------|---------|
+| `main.py` | Extract and transform weather data from the API |
+| `upload_to_s3.py` | Upload the cleaned CSV file to AWS S3 |
+| `weather_dc.csv` | Final output file |
 
-## Outcome
+---
 
-This project demonstrates a complete local-to-cloud pipeline. It successfully:
+## Why I Made This
 
-- Pulled data from a public API
-- Cleaned and stored the data in CSV format
-- Uploaded the file to a cloud environment (AWS S3) using Python
+I'm learning to work with real-world data tools, especially cloud storage and automation. This small project helped me get hands-on with the core parts of a cloud data pipeline: connecting to APIs, processing data, and working with AWS.
 
-## Author
+It’s not a huge system, but it reflects how real pipelines work at a basic level.
 
-Michael Great  
-Entry-Level Cloud Data Engineer  
+---
+
+## Notes
+
+If I had more time, I’d:
+- Set this up on a schedule using AWS Lambda or Airflow
+- Write better error handling and logging
+- Add support for more locations beyond just DC
+
+---
+
+## About Me
+
+I'm Michael Great. I’m currently building up my skills in cloud data engineering and looking for an entry-level opportunity where I can grow on real-world projects like this one.
+
 GitHub: [https://github.com/your-username](https://github.com/your-username)  
 LinkedIn: [https://linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
