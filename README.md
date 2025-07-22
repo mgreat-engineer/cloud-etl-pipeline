@@ -3,7 +3,7 @@
 This project demonstrates a simple **ETL pipeline** using Python, public APIs, and Amazon Web Services (AWS).
 
 ### 🔧 Tools Used:
-- Python 3.14
+- Python 3.13
 - Pandas
 - Requests
 - AWS S3
